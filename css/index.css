@@ -130,7 +130,168 @@ table {
 * {
   box-sizing: border-box;
 }
-html,
+html {
+  height: 100%;
+  font-size: 62.5%;
+}
 body {
   height: 100%;
+}
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header {
+  width: 80%;
+}
+header nav {
+  font-size: 2rem;
+  padding-top: 2%;
+  padding-bottom: 0.5%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+}
+header nav a {
+  text-decoration: none;
+  color: black;
+}
+header #about {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  border-bottom: 2px dashed black;
+}
+header #about img {
+  border-radius: 50%;
+  height: 40vh;
+}
+header #about .about-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  text-align: center;
+}
+header #about .about-text h1 {
+  width: 75%;
+  font-size: 3.5rem;
+  padding-bottom: 2%;
+  border-bottom: 2px solid black;
+}
+header #about .about-text p {
+  font-size: 2rem;
+  margin-top: 4%;
+}
+#skills {
+  justify-content: space-between;
+  padding: 2% 0;
+  width: 80%;
+  padding-bottom: 4%;
+  border-bottom: 2px dashed black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#skills h2 {
+  font-size: 3rem;
+  margin-bottom: 3%;
+}
+#skills .skills-content {
+  display: flex;
+  justify-content: space-between;
+}
+#skills .skills-content div {
+  width: 30%;
+  text-align: center;
+}
+#skills .skills-content div i {
+  font-size: 5rem;
+  margin-bottom: 4%;
+}
+#skills .skills-content div p {
+  font-size: 2rem;
+}
+#work {
+  justify-content: space-between;
+  padding: 2% 0;
+  width: 80%;
+  padding-bottom: 4%;
+  border-bottom: 2px dashed black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#work h2 {
+  font-size: 3rem;
+  margin-bottom: 3%;
+}
+#work .work-content {
+  display: flex;
+  justify-content: space-between;
+}
+#work .work-content div {
+  width: 30%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+#work .work-content div img {
+  border-radius: 50%;
+  height: 20vh;
+  margin-bottom: 4%;
+}
+#work .work-content div h3 {
+  font-size: 2.5rem;
+  width: 75%;
+  padding-bottom: 2%;
+  border-bottom: 2px solid black;
+}
+#work .work-content div p {
+  margin-top: 4%;
+  font-size: 2rem;
+}
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#contact {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2% 0;
+}
+#contact h2 {
+  font-size: 3rem;
+  margin-bottom: 3%;
+}
+#contact .contact-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+#contact .contact-content div {
+  width: 50%;
+  text-align: center;
+}
+#contact .contact-content div i {
+  font-size: 5rem;
+  margin-bottom: 4%;
+}
+#contact .contact-content div p {
+  font-size: 2rem;
 }

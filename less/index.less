@@ -140,7 +140,208 @@ table {
 	box-sizing: border-box;
 }
 
-html,
+html {
+	height: 100%;
+	font-size: 62.5%;
+}
+
 body {
 	height: 100%;
+}
+
+// Variables
+@page-width: 80%;
+@h1-font-size: 3.5rem;
+@h2-font-size: 3rem;
+@h3-font-size: 2.5rem;
+@p-font-size: 2rem;
+@font-awesome-size: 5rem;
+
+// Mixins
+.space-between() {
+	display: flex;
+	justify-content: space-between;
+}
+
+.space-around() {
+	display: flex;
+	justify-content: space-around;
+}
+
+.center-column() {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.bottom-border() {
+	padding-bottom: 2%;
+	border-bottom: 2px solid black;
+}
+
+.section-border() {
+	padding-bottom: 4%;
+	border-bottom: 2px dashed black;
+}
+
+// Main Styles
+.main-content {
+	.center-column();
+}
+
+header {
+	width: @page-width;
+
+	nav {
+		// background-color: dimgray;
+		font-size: 2rem;
+		padding-top: 2%;
+		padding-bottom: .5%;
+		.space-between();
+		border-bottom: 1px solid black;
+
+		a {
+			text-decoration: none;
+			color: black;
+		}
+	}
+
+	#about {
+		.space-around();
+		padding-top: 4%;
+		.section-border();
+
+		img {
+			border-radius: 50%;
+			height: 40vh;
+		}
+
+		.about-text {
+			.center-column();
+			width: 50%;
+			text-align: center;
+
+			h1 {
+				width: 75%;
+				font-size: @h1-font-size;
+				.bottom-border();
+			}
+
+			p {
+				font-size: @p-font-size;
+				margin-top: 4%;
+			}
+		}
+	}
+}
+
+// Skills styles
+#skills {
+	.space-between();
+	padding: 2% 0;
+	width: @page-width;
+	.section-border();
+	.center-column();
+
+	h2 {
+		font-size: @h2-font-size;
+		margin-bottom: 3%;
+	}
+
+	.skills-content {
+		.space-between();
+
+		div {
+			width: 30%;
+			text-align: center;
+
+			i {
+				font-size: @font-awesome-size;
+				margin-bottom: 4%;
+			}
+
+			p {
+				font-size: @p-font-size;
+			}
+		}
+	}
+}
+
+// Work Styles
+#work {
+	.space-between();
+	padding: 2% 0;
+	width: @page-width;
+	.section-border();
+	.center-column();
+
+	h2 {
+		font-size: @h2-font-size;
+		margin-bottom: 3%;
+	}
+
+	.work-content {
+		.space-between();
+
+		div {
+			width: 30%;
+			text-align: center;
+			.center-column();
+			justify-content: space-between;
+
+			img {
+				border-radius: 50%;
+				height: 20vh;
+				margin-bottom: 4%;
+			}
+
+			h3 {
+				font-size: @h3-font-size;
+				width: 75%;
+				.bottom-border();
+			}
+
+			p {
+				margin-top: 4%;
+				font-size: @p-font-size;
+			}
+		}
+	}
+}
+
+footer {
+	width: 100%;
+	.center-column();
+}
+
+// Contact styles
+#contact {
+	width: @page-width;
+	.center-column();
+	padding: 2% 0;
+
+	h2 {
+		font-size: @h2-font-size;
+		margin-bottom: 3%;
+	}
+
+	.contact-content {
+		.space-between();
+		width: 100%;
+
+		div {
+			width: 50%;
+			text-align: center;
+
+			i {
+				font-size: @font-awesome-size;
+				margin-bottom: 4%;
+			}
+
+			p {
+				font-size: @p-font-size;
+			}
+		}
+	}
 }
