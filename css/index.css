@@ -137,6 +137,13 @@ html {
 body {
   height: 100%;
 }
+@font-face {
+  font-family: 'Bowlby One SC';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Bowlby One SC Regular'), local('BowlbyOneSC-Regular'), url(https://fonts.gstatic.com/s/bowlbyonesc/v11/DtVlJxerQqQm37tzN3wMug9P_g_2pw.ttf) format('truetype');
+}
 .main-content {
   display: flex;
   flex-direction: column;
@@ -202,6 +209,7 @@ header #about .about-text {
 header #about .about-text h1 {
   width: 75%;
   font-size: 3.5rem;
+  font-family: 'Bowlby One SC', cursive;
   padding-bottom: 2%;
   border-bottom: 2px solid black;
 }
@@ -227,6 +235,7 @@ header #about .about-text p {
 }
 #skills h2 {
   font-size: 3rem;
+  font-family: 'Bowlby One SC', cursive;
   margin-bottom: 3%;
 }
 #skills .skills-content {
@@ -274,6 +283,7 @@ header #about .about-text p {
 }
 #work h2 {
   font-size: 3rem;
+  font-family: 'Bowlby One SC', cursive;
   margin-bottom: 3%;
 }
 #work .work-content {
@@ -340,6 +350,7 @@ footer {
 }
 #contact h2 {
   font-size: 3rem;
+  font-family: 'Bowlby One SC', cursive;
   margin-bottom: 3%;
 }
 #contact .contact-content {
