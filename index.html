@@ -1,12 +1,17 @@
 <!doctype html>
 
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
 
   <title>My Resume</title>
 
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="css/index.css">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/23df8bf014.js" crossorigin="anonymous"></script>
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -14,6 +19,89 @@
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  <header>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <img src="images/headshot.jpeg" alt="Headshot of Colin Barnes">
+
+    <h1>Colin Barnes</h1>
+
+    <p>Fullstack web developer and student at Lambda School. Based in Metro Detroit, Michigan.</p>
+  </section>
+
+  <section id="skills">
+    <div class="html">
+      <i class="fab fa-html5"></i>
+
+      <p>Skilled in writing semantic and accessable HTML.</p>
+    </div>
+
+    <div class="js">
+      <i class="fab fa-js"></i>
+
+      <p>Experience with writing both vanilla JavaScript and JQuery.</p>
+    </div>
+
+    <div class="css">
+      <i class="fab fa-css3-alt"></i>
+
+      <p>In depth knowledge of writing responsive CSS with both vanilla and LESS.</p>
+    </div>
+  </section>
+
+  <section class="work">
+    <div class="mobilitie">
+      <img src="images/mobilitie.png" alt="Mobilitie Logo">
+
+      <h2>Associate RF Engineer</h2>
+
+      <p>Contracted for Verizon through Mobilitie to pitch and install eFemto devices to clients in South Eastern
+        Michigan.</p>
+    </div>
+
+    <div class="ipf">
+      <img src="images/ipf.jpg" alt="Michigan State University Infrastructure Planning and Facilities Logo">
+
+      <h2>Student Info Tech Assistant I</h2>
+
+      <p>Worked with employees of the Infrastructure Planning and Facilities department of Michigan State University to
+        resolve various technical issues.</p>
+    </div>
+
+    <div class="ccr">
+      <img src="images/ccr.gif" alt="Center for Computer Resources Logo">
+
+      <h2>Staging Desk Intern</h2>
+
+      <p>Staged and deployed computer systems for clients of the Center for Computer Resources throughout Michigan.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <form action="#" class="contact-form">
+      <div class="input-div">
+        <label for="name" id="name">Name</label>
+        <input type="text" name="name" id="name" />
+      </div>
+
+      <div class="input-div">
+        <label for="email" id="email">Email</label>
+        <input type="text" name="email" id="email" />
+      </div>
+
+      <div class="message-div">
+        <label for="message" id="message">Message</label>
+        <textarea name="message" id="message" rows="4"></textarea>
+      </div>
+    </form>
+  </section>
 </body>
+
 </html>
