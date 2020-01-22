@@ -151,6 +151,7 @@ body {
 
 // Variables
 @page-width: 80%;
+@mobile-page-width: 90%;
 @h1-font-size: 3.5rem;
 @h2-font-size: 3rem;
 @h3-font-size: 2.5rem;
@@ -185,6 +186,11 @@ body {
 	border-bottom: 2px dashed black;
 }
 
+.mobile-flex() {
+	flex-direction: column;
+	align-items: center;
+}
+
 // Main Styles
 .main-content {
 	.center-column();
@@ -192,6 +198,10 @@ body {
 
 header {
 	width: @page-width;
+
+	@media (max-width: 500px) {
+		width: @mobile-page-width;
+	}
 
 	nav {
 		// background-color: dimgray;
@@ -212,15 +222,28 @@ header {
 		padding-top: 4%;
 		.section-border();
 
+		@media (max-width: 500px) {
+			.mobile-flex();
+		}
+
 		img {
 			border-radius: 50%;
 			height: 40vh;
+
+			@media (max-width: 500px) {
+				height: 30vh;
+			}
 		}
 
 		.about-text {
 			.center-column();
 			width: 50%;
 			text-align: center;
+
+			@media (max-width: 500px) {
+				width: 100%;
+				margin-top: 4%;
+			}
 
 			h1 {
 				width: 75%;
@@ -244,6 +267,10 @@ header {
 	.section-border();
 	.center-column();
 
+	@media (max-width: 500px) {
+		width: @mobile-page-width;
+	}
+
 	h2 {
 		font-size: @h2-font-size;
 		margin-bottom: 3%;
@@ -252,9 +279,18 @@ header {
 	.skills-content {
 		.space-between();
 
+		@media (max-width: 500px) {
+			.mobile-flex();
+		}
+
 		div {
 			width: 30%;
 			text-align: center;
+
+			@media (max-width: 500px) {
+				width: 100%;
+				margin-bottom: 4%;
+			}
 
 			i {
 				font-size: @font-awesome-size;
@@ -276,6 +312,10 @@ header {
 	.section-border();
 	.center-column();
 
+	@media (max-width: 500px) {
+		width: @mobile-page-width;
+	}
+
 	h2 {
 		font-size: @h2-font-size;
 		margin-bottom: 3%;
@@ -284,11 +324,20 @@ header {
 	.work-content {
 		.space-between();
 
+		@media (max-width: 500px) {
+			.mobile-flex();
+		}
+
 		div {
 			width: 30%;
 			text-align: center;
 			.center-column();
 			justify-content: space-between;
+
+			@media (max-width: 500px) {
+				width: 100%;
+				margin-bottom: 4%;
+			}
 
 			img {
 				border-radius: 50%;
@@ -320,6 +369,11 @@ footer {
 	width: @page-width;
 	.center-column();
 	padding: 2% 0;
+
+	@media (max-width: 500px) {
+		width: 100%;
+		.mobile-flex();
+	}
 
 	h2 {
 		font-size: @h2-font-size;
